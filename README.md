@@ -6,6 +6,10 @@ curl -fsSL https://raw.githubusercontent.com/progineousgb/docker-cleanup-report/
 
 Your disk is full and Docker is probably why. This script shows where the space went, sorts what can go into safe and risky, and prints the commands to remove it. It never deletes anything itself. You read the list, you run the command.
 
+## Platform
+
+Linux only. The script targets Linux servers (Debian, Ubuntu, and similar) and needs bash and root. It does not run on macOS or Windows; from those systems, run it on the server over SSH.
+
 ## Example output
 
 Real run against Docker 29.1.4 on a test machine with a few leftover containers, a rebuilt image and two orphan volumes.
